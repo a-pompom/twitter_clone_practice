@@ -1,0 +1,29 @@
+/*------------------------------*/
+/*FIELD                         */
+/*------------------------------*/
+
+
+%field {
+    display: block;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.field--user_id {
+    @extend %field;
+    margin: 50px auto;
+}
+
+.field--password {
+    @extend %field;
+    margin: 15px auto;
+}
+
+
+.field--post {
+    @extend %field;
+    width: 600px;
+    height: 200px;
+    
+}

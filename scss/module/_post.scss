@@ -1,0 +1,31 @@
+/*-----------------------------*/
+/*POST                         */
+/*-----------------------------*/
+
+.post {
+    width: 50%;
+    margin: 15px auto;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.post-user {
+    @include flex-left;
+    
+    &__content {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        margin-right: 10px;
+    }
+}
+
+
+.post-mention {
+    //メンションアイコンを等間隔で設置
+    @include flex-between;
+    width: 30%;
+    
+    &__content {
+        font-size: 1.8rem;
+    }
+}

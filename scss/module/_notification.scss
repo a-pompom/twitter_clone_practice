@@ -1,0 +1,60 @@
+/*-----------------------------*/
+/*NOTIFICATION                 */
+/*-----------------------------*/
+
+.notification {
+    //レイアウト
+    &__list {
+        width: 40%;
+        
+        &__favorite {
+            width: 40%;
+            margin-left: 20px;
+            border-left: 10px dotted #e3e3e3;
+        }
+    }
+    
+    &__subject {
+        @include flex-left;
+        font-size: 1.6rem;
+        
+        //アイコンとメンションを離す為にmarginを設定
+        > :last-child {
+            margin-left: 10px;
+        }
+        
+    }
+    
+    &__object {
+        @include flex-left;
+        border: 1px solid #e6e6e6;
+        border-radius: 30px;
+        
+    }
+    //レイアウトここまで
+    
+    //要素のスタイリング
+    &__head-text {
+        font-weight: bold;
+        font-size: 1.4rem;
+        border-bottom: 2px solid $BASE_COLOR;
+        padding-bottom: 3px;
+    }
+    
+    //ユーザ名を太字で表示
+    &__post {
+        line-height: 1.5;
+        
+        > :first-child {
+            font-weight: bold;
+        }
+        
+        &__text {
+            text-align: center;
+        }
+        
+    }
+    
+    
+    
+}

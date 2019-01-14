@@ -1,0 +1,30 @@
+.follow {
+    width: 70%;
+    @include flex-table;
+    align-items: center; 
+    line-height: 1.6;
+    
+    &__user {
+        width: 25%;
+        height: 200px;
+        background-color: white;
+        margin-left: 20px;
+        padding-left: 10px;
+        
+        //ユーザ名は太字で強調
+        & > :nth-child(2) {
+            font-weight: bold;
+        }
+        
+        &__main {
+            @include flex-left;
+            padding-left: 0;
+            
+            //フォロー中ボタン
+            & > :last-child {
+                //フォロー中ボタンはアイコンに対して中央右端に配置するためmarginを設定
+                margin: auto 10px auto auto;
+            }
+        }
+    }
+}

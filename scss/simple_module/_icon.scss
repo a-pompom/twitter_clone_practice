@@ -1,0 +1,11 @@
+%icon {
+    //border-radius: 50%;
+    &:hover{
+      opacity: 0.8;  
+    } 
+}
+
+.icon--middle {
+    @extend %icon;
+    font-size: 5rem;
+}

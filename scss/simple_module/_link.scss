@@ -1,0 +1,19 @@
+/*------------------------------*/
+/*LINK                          */
+/*------------------------------*/
+
+%link {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.link--header {
+    @extend %link;
+}
+
+.link--content {
+    @extend %link;
+    font-size: 4.5rem;
+    margin-right: 10px;
+    vertical-align: top;
+}
