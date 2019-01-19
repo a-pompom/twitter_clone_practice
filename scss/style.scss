@@ -1,16 +1,18 @@
 $BASE_COLOR: #b2f0ff;
 
+//ベース部分
 @import "base/base";
 @import "base/mixin";
 @import "layout/layout";
 
 
-    
+//小モジュール    
 @import "simple_module/button";
 @import "simple_module/field";
 @import "simple_module/link";
 @import "simple_module/icon";
 
+//画面用モジュール
 @import "module/header";
 @import "module/post";
 @import "module/login";

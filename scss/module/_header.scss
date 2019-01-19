@@ -2,14 +2,10 @@
 /*HEADER*/
 /*------------------------------*/
 
-%header {
+.header {
     width: 100%;
     height: 40px;
     background-color: #fff;
-}
-
-.header {
-    @extend %header;
     @include flex-center;
  
     &__title {
@@ -20,10 +16,6 @@
         width: 40%;
         @include flex-between;
         line-height: 1.0;
-        
-        &-search {
-            display: inline-block;
-        }
     }
  
     &__sub {
