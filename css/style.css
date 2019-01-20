@@ -170,7 +170,7 @@ button, input[type=submit] {
 }
 
 /*------------------------------*/
-/*HEADER*/
+/*HEADER                        */
 /*------------------------------*/
 .header {
   width: 100%;
@@ -343,6 +343,9 @@ button, input[type=submit] {
   line-height: 1.5;
 }
 
+/*------------------------------*/
+/*FOLLOW                        */
+/*------------------------------*/
 .follow {
   width: 70%;
   display: flex;
@@ -363,13 +366,13 @@ button, input[type=submit] {
   font-weight: bold;
 }
 
-.follow__user__main {
+.follow__user__content {
   display: flex;
   justify-content: flex-start;
   padding-left: 0;
 }
 
-.follow__user__main > :last-child {
+.follow__user__content > :last-child {
   margin: auto 10px auto auto;
 }
 
