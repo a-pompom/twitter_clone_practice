@@ -11,7 +11,7 @@
 
 .post-user {
     @include flex-left;
-    
+    height: 30px;
     &__content {
         font-size: 1.6rem;
         line-height: 1.8;
@@ -19,6 +19,11 @@
     }
 }
 
+.post-text {
+    margin-top: 25px;
+    margin-left: 100px;
+    text-align: left;
+}
 
 .post-mention {
     //メンションアイコンを等間隔で設置

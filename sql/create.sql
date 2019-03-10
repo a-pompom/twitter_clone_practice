@@ -2,6 +2,7 @@
 CREATE TABLE tm_user
 (user_id SERIAL,
 user_name VARCHAR(30) NOT NULL ,
+password VARCHAR(255) NOT NULL ,
 user_nickname VARCHAR(30) ,
 bio VARCHAR(255) ,
 last_login_ts timestamp ,
@@ -26,6 +27,7 @@ CREATE TABLE ts_comment
 (comment_id SERIAL,
  comment_user_id integer,
  comment_post_id integer,
+ comment VARCHAR(255) NOT NULL,
  comment_ts timestamp,
  PRIMARY KEY(comment_id),
  FOREIGN KEY(comment_user_id) REFERENCES tm_user(user_id),
@@ -74,4 +76,11 @@ CREATE TABLE ts_notification
  FOREIGN KEY(notification_user_from_id) REFERENCES tm_user(user_id),
  FOREIGN KEY(notification_user_to_id) REFERENCES tm_user(user_id),
  FOREIGN KEY(notification_post_id) REFERENCES tm_post(post_id)
+);
+
+-- 投稿情報
+CREATE TABLE ts_image
+(image_id SERIAL,
+ image_name VARCHAR(255) NOT NULL,
+ PRIMARY KEY(image_id)
 );
