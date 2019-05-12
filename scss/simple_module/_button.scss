@@ -36,8 +36,10 @@
 
 .button--nav {
     @extend %button;
-    width: 100px;
-    height: 30px;
+    width: 80%;
+    height: 70%;
+	font-size: 140%;
+	line-height: 1.8;
     background-color: $BASE_COLOR;
 }
 

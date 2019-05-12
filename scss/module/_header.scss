@@ -2,9 +2,17 @@
 /*HEADER                        */
 /*------------------------------*/
 
+//ベースの幅・高さ 幅で影響を受けるのはボタンのみなのでボタン部分にのみレスポンシブを設定
+%headerSubWidth {
+	width: 20% 
+}
+%headerHeight {
+	height: 6%;
+}
+
 .header {
     width: 100%;
-    height: 40px;
+    @extend %headerHeight;
     background-color: #fff;
     @include flex-center;
  
@@ -19,11 +27,38 @@
     }
  
     &__sub {
-        width: 16%;
+        @extend %headerSubWidth;
         @include flex-between;
         margin-left: auto;
         line-height: 2.0;
     }
 }
 
+//ボタン領域の幅
+@media screen and (max-width: 1080px) {
+  %headerSubWidth {
+	width: 24%;
+}
+}
+@media screen and (max-width: 900px) {
+  %headerSubWidth {
+	width: 32%;
+}
+}
+@media screen and (max-width: 670px) {
+  %headerSubWidth {
+	width: 45%; 
+}
+}
 
+//ヘッダの高さ
+@media screen and (max-height: 640px) {
+  %headerHeight {
+    height: 8%;
+  }
+}
+@media screen and (max-height: 360px) {
+  %headerHeight {
+    height: 10%;
+  }
+}

@@ -2,19 +2,57 @@
 /*LOGIN                         */
 /*------------------------------*/
 
+//ログイン領域の幅・高さ
+%loginWidth {
+	width: 30% 
+}
+%loginHeight {
+	height: 50%;
+}
+
+.login {
+    @extend %loginWidth;
+    @extend %loginHeight;
+	margin: 10% auto;
+}
+
 .login-form {
     display: block;
-    width: 30%;
     background-color: #fff;
-    height: 40%;
-    padding-top: 50px;
-    margin: 150px auto;
-    
-    border-radius: 40px;
-    
+    padding-top: 5%;
+    border-radius: 8%;
 }
 
 .login__text {
     text-align: center;
     font-size: 1.7rem;
+}
+
+//幅　
+@media screen and (max-width: 1080px) {
+  %loginWidth {
+	width: 45%;
+}
+}
+@media screen and (max-width: 950px) {
+  %loginWidth {
+	width: 50%;
+}
+}
+@media screen and (max-width: 670px) {
+  %loginWidth {
+	width: 60%; 
+}
+}
+
+//高さ
+@media screen and (max-height: 640px) {
+  %loginHeight {
+    height: 60%;
+  }
+}
+@media screen and (max-height: 360px) {
+  %loginHeight {
+    height: 70%;
+  }
 }
