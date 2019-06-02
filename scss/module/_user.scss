@@ -1,94 +1,83 @@
 /*-----------------------------*/
-/*USER                         */
+/*USER						 */
 /*-----------------------------*/
 
-//フォロー数、お気に入り数などを表すヘッドライン
-.user__headline {
-    width: 100%;
-    @include flex-center;
-    background-color: #fff;
-    border-top: 1px solid #d3d3d3;
-    
-    //プロフィール用のアイコンははみ出して配置させる為に絶対配置を利用
-    .user-icon {
-        position: absolute;
-        left: 8%;
-        font-size: 10rem;
-    }
-    //フォロー数、お気に入りなどの情報
-    .user-info {
-        width: 50%;
-        margin: 0 auto;
-        background-color: #fff;
-        @include flex-center;
+.user-prof {
+	width: 65%;
+	background-color: #fff;
+	margin: 5px auto;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d3d3d3;
+	
+	&__main {
+		
+		@include flex-left;
+		margin-bottom: 10px;
+		
+		&-icon {
+			border-radius: 50%;
+		}
+		
+		&-button {
+			margin: auto 10px 10px auto;
+		}
+		
+		.user-icon {
+	 		font-size: 10rem;
+		}
+	}
+	
+	&__text {
+		font-size: 1.3rem;
+		text-align: left;
+		padding-bottom: 5px;
+		&-name {
+			font-weight: bold;
+			
+		}
+		
+		&-id {
+			color: #b3b3b3;
+		}
+		
+		&-bio {
+			display: inline-block;
+			margin: 10px 5px;
+		}
+	}
+	
+	
+	
+	&__headline {
+		width: 95%;
+		border-top: 1px solid #d3d3d3;
+		
+		//フォロー数、お気に入りなどの情報
+		.user-info {
+			width: 90%;
+			
+			background-color: #fff;
+			@include flex-between;
 
-        &__content {
-            font-size: 1.6rem;
-            line-height: 1.8;
-            margin-right: 10px;
-            
-            //項目名
-            &__main {
-                font-weight: bold;
-            }
+			&__content {
+				font-size: 1.6rem;
+				line-height: 1.8;
+				margin-right: 10px;
 
-            //項目値
-            &__sub {
-                font-size: 1.0rem;
-                line-height: 1.0;
-            }
-        }
-    }
-    
-    //プロフィール編集ボタン
-    .user-button {
-        margin: auto 10px auto auto;
-        padding-bottom: 3px;
-    }
-    
+				//項目名
+				&__main {
+					font-weight: bold;
+				}
+
+				//項目値
+				&__sub {
+					font-size: 1.0rem;
+					line-height: 1.0;
+				}
+			}
+		}
+	}
 }
 
-//投稿横に表示されるユーザの情報
-.user__about {
-    //flex-boxを利用する場合投稿を囲むdivでネストが深くなってしまうので
-    //floatを利用して投稿欄へ周り込ませる
-    float: left;
-    width: 20%;
-    height: 300px;
-    background-color: #fff;
-    margin-top: 80px;
-    margin-left: 2%;
-    
-    &__text {
-        text-align: left;
-        font-size: 1.2rem;
-        line-height: 1.8;
-        
-        //ユーザ名は太字で強調
-        & li:first-child {
-            font-size: 1.5rem;
-            font-weight: bold;
-            line-height: 1.5;
-        }
-    } 
-    
-    &::after{
-        @include clearfix;
-    }
-    
-}
 
 
-//ユーザ画面で現在参照中の要素を表すヘッドテキスト
-.user__head-text {
-    width: 50%;
-    height: 30px;
-    background-color: #fff;
-    margin: 10px auto;
-    
-    //テキスト情報
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}

@@ -4,34 +4,34 @@
 //clearfix
 
 @mixin clearfix {
-    content: '';
-    display: block;
-    clear: both;
+	content: '';
+	display: block;
+	clear: both;
 }
 
 
 //flex-box
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 @mixin flex-right {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 @mixin flex-left {
-    display: flex;
-    justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 
 @mixin flex-between {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 @mixin flex-table {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }

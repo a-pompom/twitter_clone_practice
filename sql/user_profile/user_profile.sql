@@ -1,6 +1,6 @@
 select u.user_id, u.user_name, u.user_nickname, u.bio, u.birth_date,
-       coalesce(pc.post_count, 0) post_count, coalesce(fc.follow_count, 0) follow_count,
-       coalesce(fwc.follower_count, 0) follower_count, coalesce(favc.favorite_count, 0) favorite_count
+	   coalesce(pc.post_count, 0) post_count, coalesce(fc.follow_count, 0) follow_count,
+	   coalesce(fwc.follower_count, 0) follower_count, coalesce(favc.favorite_count, 0) favorite_count
 from tm_user u
 -- 投稿数
 left join (

@@ -1,38 +1,56 @@
 /*------------------------------*/
-/*BASE                          */
+/*BASE						  */
 /*------------------------------*/
 
 html {
-    font-size: 75%;
+	font-size: 75%;
 	width: 100%;
   	height: 100%;
 }
 
 body {
-    font-family: 'Noto Sans Japanese', 'sans-serif';
-    color: #767676;
+	font-family: 'Noto Sans Japanese', 'sans-serif';
+	color: #767676;
 	width: 100%;
   	height: 100%;
-    background-color: #e5e5e5;
+	background-color: #e5e5e5;
 }
 
 a {
-    color: #767676;
-    text-decoration: none;
+	color: #767676;
+	text-decoration: none;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
-button,input[type=submit]{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+button[type=submit]{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	resize: none;
+	padding: 0;
+	border: 0;
+	outline: none;
+	background: transparent;
+  }
+
+input[type="file"] {
+	display: none;
 }
 
 .wrapper {
-    display: flex;
+	display: flex;
 }
 
 .objDisabled {

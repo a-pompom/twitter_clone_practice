@@ -1,0 +1,77 @@
+.prof-edit-dialog {
+	width: 40%;
+	height: 70%;
+	border: 1px solid #000;
+}
+.prof-edit{
+	width: 100%;
+	height: 100%;
+	
+	&__heading {		
+		@include flex-right;
+		width: 100%;
+		height: 10%;
+		border-bottom: 1px solid #000;
+		padding-bottom: 2%;
+		margin-bottom: 10px;
+		
+		&__close {
+			margin-right: auto;
+			font-size: 300%;
+			border-radius: 50%;
+			
+			&:hover {
+				cursor: pointer;
+				background-color: #e3e3e3;
+			}
+		}	
+	}
+	
+	&__edit {
+		width: 100%;
+		height: 85%;
+
+		&__image {
+			width: 100%;
+			height: 10%;
+		}
+
+		&__username{
+			width: 100%;
+			height: 30%;
+		}
+
+		&__bio {
+			width: 100%;
+			height: 40%;
+
+			.bio-area {
+				width: 100%;
+				height: 90%;
+				border: 1px solid #b2f0ff;
+				border-radius: 3%;
+				
+				height: 55%;
+				font-size: 1.3rem;
+				margin: 5px auto;
+			}
+		}
+	}
+	
+	&__label {
+		font-size: 1.5rem;
+		margin-left: 15%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+	}
+	
+	&__file {		
+			padding: 6px 12px;
+			cursor: pointer;
+			
+		&__image {
+			border-radius: 50%;
+		}
+	}
+}
+

@@ -1,5 +1,5 @@
 /*------------------------------*/
-/*HEADER                        */
+/*HEADER						*/
 /*------------------------------*/
 
 //ベースの幅・高さ 幅で影響を受けるのはボタンのみなのでボタン部分にのみレスポンシブを設定
@@ -11,27 +11,27 @@
 }
 
 .header {
-    width: 100%;
-    @extend %headerHeight;
-    background-color: #fff;
-    @include flex-center;
+	width: 100%;
+	@extend %headerHeight;
+	background-color: #fff;
+	@include flex-center;
  
-    &__title {
-        margin-right: auto;
-    }
-    
-    &__nav {
-        width: 40%;
-        @include flex-between;
-        line-height: 1.0;
-    }
+	&__title {
+		margin-right: auto;
+	}
+	
+	&__nav {
+		width: 40%;
+		@include flex-between;
+		line-height: 1.0;
+	}
  
-    &__sub {
-        @extend %headerSubWidth;
-        @include flex-between;
-        margin-left: auto;
-        line-height: 2.0;
-    }
+	&__sub {
+		@extend %headerSubWidth;
+		@include flex-between;
+		margin-left: auto;
+		line-height: 2.0;
+	}
 }
 
 //ボタン領域の幅
@@ -54,11 +54,11 @@
 //ヘッダの高さ
 @media screen and (max-height: 640px) {
   %headerHeight {
-    height: 8%;
+	height: 8%;
   }
 }
 @media screen and (max-height: 360px) {
   %headerHeight {
-    height: 10%;
+	height: 10%;
   }
 }

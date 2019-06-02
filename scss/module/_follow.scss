@@ -1,34 +1,46 @@
 /*------------------------------*/
-/*FOLLOW                        */
+/*FOLLOW						*/
 /*------------------------------*/
 
 .follow {
-    width: 70%;
-    @include flex-table;
-    align-items: center; 
-    line-height: 1.6;
-    
-    &__user {
-        width: 25%;
-        height: 200px;
-        background-color: white;
-        margin-left: 20px;
-        padding-left: 10px;
-        
-        //ユーザ名は太字で強調
-        & > :nth-child(2) {
-            font-weight: bold;
-        }
-        
-        &__content {
-            @include flex-left;
-            padding-left: 0;
-            
-            //フォロー中ボタン
-            & > :last-child {
-                //フォロー中ボタンはアイコンに対して中央右端に配置するためmarginを設定
-                margin: auto 10px auto auto;
-            }
-        }
-    }
+	width: 65%;
+	line-height: 1.6;
+	margin: 0 auto;
+	
+	&__user {
+		height: 100px;
+		background-color: white;
+		margin-left: 20px;
+		padding-left: 10px;
+		
+		border-bottom: 1px solid #d3d3d3;
+		
+		&__text {
+			//ユーザ名は太字で強調
+			& > :nth-child(1) {
+				font-weight: bold;
+			}
+			//ユーザIDは薄く表示
+			& > :nth-child(2) {
+				color: #b3b3b3;
+			}
+			//自己紹介はスペースをあける
+			& > :nth-child(3) {
+				display: inline-block;
+				margin: 10px 5px;
+			}
+		}
+		
+		
+		&__content {
+			@include flex-left;
+			padding-left: 0;
+			
+			//フォロー中ボタン
+			& > :last-child {
+				//フォロー中ボタンはアイコンに対して中央右端に配置するためmarginを設定
+				margin: auto 10px auto auto;
+			}
+		}
+	}
 }

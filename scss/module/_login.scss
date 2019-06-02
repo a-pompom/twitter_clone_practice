@@ -1,5 +1,5 @@
 /*------------------------------*/
-/*LOGIN                         */
+/*LOGIN						 */
 /*------------------------------*/
 
 //ログイン領域の幅・高さ
@@ -11,21 +11,21 @@
 }
 
 .login {
-    @extend %loginWidth;
-    @extend %loginHeight;
+	@extend %loginWidth;
+	@extend %loginHeight;
 	margin: 10% auto;
 }
 
 .login-form {
-    display: block;
-    background-color: #fff;
-    padding-top: 5%;
-    border-radius: 8%;
+	display: block;
+	background-color: #fff;
+	padding-top: 5%;
+	border-radius: 8%;
 }
 
 .login__text {
-    text-align: center;
-    font-size: 1.7rem;
+	text-align: center;
+	font-size: 1.7rem;
 }
 
 //幅　
@@ -48,11 +48,11 @@
 //高さ
 @media screen and (max-height: 640px) {
   %loginHeight {
-    height: 60%;
+	height: 60%;
   }
 }
 @media screen and (max-height: 360px) {
   %loginHeight {
-    height: 70%;
+	height: 70%;
   }
 }

@@ -1,36 +1,38 @@
 /*-----------------------------*/
-/*POST                         */
+/*POST						 */
 /*-----------------------------*/
 
 .post {
-    width: 50%;
-    margin: 15px auto;
-    border-bottom: 1px solid #d3d3d3;
-    background-color: #fff;
+	width: 65%;
+	margin: 3px auto;
+	padding: 10px;
+	border-bottom: 1px solid #d3d3d3;
+	background-color: #fff;
 }
 
 .post-user {
-    @include flex-left;
-    height: 30px;
-    &__content {
-        font-size: 1.6rem;
-        line-height: 1.8;
-        margin-right: 10px;
-    }
+	@include flex-left;
+	height: 30px;
+	&__content {
+		font-size: 1.6rem;
+		line-height: 1.8;
+		margin-right: 10px;
+	}
 }
 
 .post-text {
-    margin-top: 25px;
-    margin-left: 100px;
-    text-align: left;
+	margin-top: 25px;
+	margin-left: 15%;
+	font-size: 1.3rem;
+	text-align: left;
 }
 
 .post-mention {
-    //メンションアイコンを等間隔で設置
-    @include flex-between;
-    width: 30%;
-    
-    &__content {
-        font-size: 1.8rem;
-    }
+	//メンションアイコンを等間隔で設置
+	@include flex-between;
+	width: 30%;
+	
+	&__content {
+		font-size: 1.8rem;
+	}
 }

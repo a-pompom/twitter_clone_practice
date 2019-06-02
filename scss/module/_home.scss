@@ -1,23 +1,68 @@
 /*-----------------------------*/
-/*HOME                         */
+/*HOME						 */
 /*-----------------------------*/
 
 //画面レイアウト
 .home{
-    
-    &__post-form {
-        background-color: #e3f8fd;
-    }
-    
+	
+	&__title {
+		width: 80%;
+		font-size: 1.8rem;
+		padding: 10px;
+		margin: 5px auto;
+		border-bottom: 1px solid #d3d3d3;
+	}
+	
+	&__post-form {
+		background-color: #e3f8fd;
+	}
+	
 }
 
+.post-area {
+	
+	width: 80%;
+	height: 80px;
+	border-bottom: 1px solid #d3d3d3;
+	margin: 0 auto;
+	padding: 10px;
+	
+	&:hover {
+			background-color: #f8f8f8;
+			cursor: pointer;
+		}
+	
+	&__content {
+		@include flex-center;
+		width: 80%;
+		height: inherit;
+		margin: auto auto auto 10px;
+		text-align: left;
+		
+		
+		
+		&__icon {
+			
+		}
+		
+		&__form {
+			width: 60%;
+			height: 65%;
+			background-color: #f3f3f3;;
+			border-radius: 20px;
+			font-size: 1.3rem;
+			line-height: 3em;
+			padding-left: 10px;
+		}
+	}
+}
 
 .post-form {
-    
-    //アイコンと入力欄をセットにするために横並びレイアウトを利用
-    &__main {
-        @include flex-center;
-    }
+	
+	//アイコンと入力欄をセットにするために横並びレイアウトを利用
+	&__main {
+		@include flex-center;
+	}
 }
 
 

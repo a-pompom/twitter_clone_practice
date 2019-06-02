@@ -6,12 +6,16 @@ $BASE_COLOR: #b2f0ff;
 @import "layout/layout";
 
 
-//小モジュール    
+//小モジュール	
 @import "simple_module/button";
 @import "simple_module/field";
 @import "simple_module/link";
 @import "simple_module/icon";
 @import "simple_module/mention";
+
+//ダイアログ
+@import "dialog/prof-edit";
+@import "dialog/post-add";
 
 //画面用モジュール
 @import "module/header";

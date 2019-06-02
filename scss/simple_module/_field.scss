@@ -1,29 +1,37 @@
 /*------------------------------*/
-/*FIELD                         */
+/*FIELD						 */
 /*------------------------------*/
 
 
 %field {
-    display: block;
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
+	display: block;
+	width: 250px;
+	height: 40px;
+	border-radius: 5px;
 }
 
 .field--user_id {
-    @extend %field;
-    margin: 50px auto;
+	@extend %field;
+	margin: 50px auto;
 }
 
 .field--password {
-    @extend %field;
-    margin: 15px auto;
+	@extend %field;
+	margin: 15px auto;
 }
 
 
 .field--post {
-    @extend %field;
-    width: 600px;
-    height: 200px;
-    
+	@extend %field;
+	width: 600px;
+	height: 200px;
+	
+}
+
+.field--small {
+	@extend %field;
+	widht: 120px;
+	height: 30px;
+	border-radius: 4px;
+	margin: 10px auto;
 }
